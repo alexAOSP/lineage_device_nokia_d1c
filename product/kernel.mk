@@ -1,0 +1,3 @@
+TARGET_PREBUILT_KERNEL := device/nokia/magick/kernel
+PRODUCT_COPY_FILES += \
+	$(TARGET_PREBUILT_KERNEL):kernel
