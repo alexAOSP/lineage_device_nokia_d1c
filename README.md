@@ -12,7 +12,7 @@ GPU     | Adreno 505
 Memory  | 2 GB RAM
 Android Version | 7.1.1, 7.1.2, 8.0.0, 8.1.0
 Storage | 16 GB
-MicroSD | Up to 64 GB
+MicroSD | Support for up to 128 GB
 Battery | Li-Ion 3000mAh battery
 Display | 720 x 1280 pixels, 5.0 inches / 1080 x 1920 pixels, 5.2 inches
 Camera  | 13/8 MP, autofocus, flash LED
