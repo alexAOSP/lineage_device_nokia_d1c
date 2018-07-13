@@ -22,5 +22,5 @@ ALL_PREBUILT += $(INSTALLED_KERNEL_TARGET)
 
 # copy keylayout overrides
 $(shell mkdir -p $(TARGET_OUT_KEYLAYOUT); \
-    cp -pf device/nokia/magick/keylayout/Generic.kl $(TARGET_OUT_KEYLAYOUT))
+    cp -pf device/nokia/heart/keylayout/Generic.kl $(TARGET_OUT_KEYLAYOUT))
 
