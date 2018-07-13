@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/nokia/magick
+DEVICE_PATH := device/nokia/heart
 
 # Inherit device-specific board fragments
 include $(DEVICE_PATH)/board/*.mk
