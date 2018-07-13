@@ -1,7 +1,7 @@
 Device Tree for Nokia 5 (TA-1053)
 ==============================================
 
-Nokia 5 (codenamed "TA-1053") is a smartphone from HMD Global.
+Nokia 5 TA-1053 (codenamed "heart") is a smartphone from HMD Global.
 It was released in August 2017.
 
 Basic   | Spec Sheet
