@@ -1,0 +1,261 @@
+
+#
+# from device/nokia/d1c/system.prop
+#
+#
+# system.prop for d1c
+#
+
+#+{PS1-KW_ENABLE_OEM_SOCKET-01 [MCS-5539]
+persist.radio.oem_socket=true
+#PS1-KW_ENABLE_OEM_SOCKET-01}+ [MCS-5539]
+
+# {{ [VKYK-1129] FrankYSCheng
+persist.env.fastdorm.enabled=true
+# }} [VKYK-1129]
+
+# {{ [VNA-2863] FrankYSCheng
+persist.data.tcp_rst_drop=true
+# }} [VNA-2863]
+
+
+# Fihtdccode@CPLai 20140916 add for enable log dynamically for TID-5866 begin
+persist.sys.wifi_log_enable=false
+persist.sys.MNC=UNKNOW
+# Fihtdccode@CPLai 20140916 add for enable log dynamically for TID-5866 end
+
+
+# Fihtdccode@TommyYSHung 20150722 add for enable log dynamically for FAO-5543 Begin
+persist.sys.bt_debug_log_enable=false
+# Fihtdccode@TommyYSHung 20150722 add for enable log dynamically for FAO-5543 End
+
+#FihtdcCode@MexWu add for WBG TOOL ramdump begin
+persist.sys.wbg.bt.service=false
+persist.sys.wbg.bt=btstop
+#FihtdcCode@MexWu add for WBG TOOL ramdump end
+
+#+FIH@R3J168: [BASIC FEATURE 7] ONE IMAGE ICCID MECHANISM
+persist.ims.enableADBLogs=1
+persist.ims.enableDebugLogs=1
+persist.data.iwlan.enable=true
+#-FIH@R3J168: [BASIC FEATURE 7] ONE IMAGE ICCID MECHANISM
+
+# [VN3-954][VN3N-795] IsaacHHLiu, Enable cross binding
+persist.radio.flexmap_type=nw_mode
+
+# [D1C-35] set ro.telephony.default_network to 22 (G+W+TDS+C+L), RollinCCTseng, 20160901
+ro.telephony.default_network=22
+
+# [ND1-5859] set persist.radio.csg_info_avlbl to 1 (enable), RollinCCTseng, 20170411
+persist.radio.csg_info_avlbl=1
+
+# SW4-HL-Display-EnableSVI-00+{_20161020
+#Enable SVI(Sun Light visibility Improvement)
+ro.qualcomm.svi=1
+
+#Android Light sensor Interface
+ro.qcom.svi.sensortype=2
+
+#SVI configuration file
+config.svi.xml=1
+config.svi.path=/system/etc/svi_config.xml
+config.svi.xml.print=1
+#Enable SVI debugging
+debug.cabl.logs=1
+debug.svi.logs=1
+debug.als.logs=1
+# SW4-HL-Display-EnableSVI-00+}_20161020
+
+# [ND1-7532] set persist.radio.lte_vrte_ltd to 1 (enable), RollinCCTseng, 20170518
+persist.radio.lte_vrte_ltd=1#
+# system.prop for D1C_BSP
+#
+
+# Enable QC2.0 functionality
+persist.usb.hvdcp.detect=true
+
+#poff deamon default value
+persist.fih.poff_flag=0
+persist.fih.flight_flag=1
+persist.fih.flight_cap=70
+persist.fih.flight_n_cap = 95
+persist.fih.flight_cap_low=40
+#
+# system.prop for msm8937
+#
+
+rild.libpath=/vendor/lib64/libril-qc-qmi-1.so
+rild.libargs=-d /dev/smd0
+persist.rild.nitz_plmn=
+persist.rild.nitz_long_ons_0=
+persist.rild.nitz_long_ons_1=
+persist.rild.nitz_long_ons_2=
+persist.rild.nitz_long_ons_3=
+persist.rild.nitz_short_ons_0=
+persist.rild.nitz_short_ons_1=
+persist.rild.nitz_short_ons_2=
+persist.rild.nitz_short_ons_3=
+ril.subscription.types=NV,RUIM
+DEVICE_PROVISIONED=1
+#
+# Set network mode to (T/L/G/W/1X/EVDO, T/G/W/L) for 7+5 mode device on DSDS mode
+#
+ro.telephony.default_network=22,20
+
+debug.sf.hw=0
+debug.egl.hw=0
+persist.hwc.mdpcomp.enable=true
+debug.mdpcomp.logs=0
+dalvik.vm.heapsize=36m
+dev.pm.dyn_samplingrate=1
+persist.demo.hdmirotationlock=false
+debug.enable.sglscale=1
+
+#ro.hdmi.enable=true
+#tunnel.decode=true
+#
+# system props for the cne module
+#
+persist.cne.feature=1
+
+#system props for the MM modules
+media.msm8956hw=0
+mm.enable.smoothstreaming=true
+mmp.enable.3g2=true
+media.aac_51_output_enabled=true
+
+#codecs:(PARSER_)AAC AC3 AMR_NB AMR_WB AVI DTS FLV 3GP 3G2 MKV MP2PS MP2TS MP3 QCP WAV FLAC AIFF APE DIVX DIVXHD
+mm.enable.qcom_parser=4177903
+
+# system prop for UBWC
+video.disable.ubwc=1
+
+# system prop to disable split mode
+vidc.disable.split.mode=1
+
+# system property to accelerate Progressive Download using STA
+persist.mm.sta.enable=0
+
+#
+# system props for the data modules
+#
+ro.use_data_netmgrd=true
+persist.data.netmgrd.qos.enable=true
+persist.data.mode=concurrent
+
+#system props for time-services
+persist.timed.enable=true
+
+#
+# system prop for opengles version
+#
+# 196608 is decimal for 0x30000 to report major/minor versions as 3/0
+# 196609 is decimal for 0x30001 to report major/minor versions as 3/1
+#ro.opengles.version=196609
+
+# System property for cabl
+#ro.qualcomm.cabl=2
+
+#
+# System props for telephony
+# System prop to turn on CdmaLTEPhone always
+telephony.lteOnCdmaDevice=1
+
+#
+# System props for bluetooh
+# System prop to turn on hfp client
+bluetooth.hfp.client=1
+
+#Simulate sdcard on /data/media
+#
+persist.fuse_sdcard=true
+
+#System property for FM transmitter
+ro.fm.transmitter=false
+
+#property to enable user to access Google WFD settings
+persist.debug.wfd.enable=1
+#property to enable VDS WFD solution
+persist.hwc.enable_vds=1
+
+#selects CoreSight configuration to enable
+persist.debug.coresight.config=stm-events
+
+#selects Console configuration to enable
+persist.console.silent.config=0
+
+#property for vendor specific library
+ro.vendor.at_library=libqti-at.so
+ro.vendor.gt_library=libqti-gt.so
+
+#property for game detection feature
+debug.enable.gamed=0
+
+#property to enable narrow search range for video encoding
+vidc.enc.narrow.searchrange=1
+
+#property to enable fingerprint
+persist.qfp=false
+
+#min/max cpu in core control
+ro.core_ctl_min_cpu=2
+ro.core_ctl_max_cpu=4
+
+#HWUI properties
+ro.hwui.texture_cache_size=72
+ro.hwui.layer_cache_size=48
+ro.hwui.r_buffer_cache_size=8
+ro.hwui.path_cache_size=32
+ro.hwui.gradient_cache_size=1
+ro.hwui.drop_shadow_cache_size=6
+ro.hwui.texture_cache_flushrate=0.4
+ro.hwui.text_small_cache_width=1024
+ro.hwui.text_small_cache_height=1024
+ro.hwui.text_large_cache_width=2048
+ro.hwui.text_large_cache_height=2048
+
+#Enable B service adj transition by default
+ro.sys.fw.bservice_enable=true
+ro.sys.fw.bservice_limit=5
+ro.sys.fw.bservice_age=5000
+
+#Trim properties
+ro.sys.fw.use_trim_settings=true
+ro.sys.fw.empty_app_percent=50
+ro.sys.fw.trim_empty_percent=100
+ro.sys.fw.trim_cache_percent=100
+ro.sys.fw.trim_enable_memory=6442450944
+
+# Enable Delay Service Restart
+ro.am.reschedule_service=true
+
+#Optimal dex2oat threads for faster app installation
+ro.sys.fw.dex2oat_thread_count=4
+
+# Create zram disk
+ro.config.zram=true
+
+# Create Swap disk, if below sys-prop enabled & also if device has lower (< 1 GB) RAM
+ro.config.swap=true
+
+# set cutoff voltage to 3200mV
+ro.cutoff_voltage_mv=3200
+
+#set device emmc size
+ro.emmc_size=16GB
+
+#force HAL1 for below packages
+camera.hal1.packagelist=com.skype.raider,com.google.android.talk,com.tools.alt
+
+#properties for limiting preview size in camera
+camera.display.umax=1920x1080
+camera.display.lmax=1280x720
+
+#set cutoff voltage to 3400mV
+ro.cutoff_voltage_mv=3400
+ro.qc.sdk.audio.fluencetype=fluence
+persist.audio.fluence.speaker=false
+
+#
+# ADDITIONAL_BUILD_PROPERTIES
+#
