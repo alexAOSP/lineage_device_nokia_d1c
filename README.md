@@ -1,6 +1,6 @@
 Device Tree for Nokia 5 (TA-1053)
 ==============================================
-Based on ![Wileyfox Swift 2 source tree](https://github.com/DevelopedInside/android_device_wileyfox_marmite "Wileyfox Swift 2 source tree")
+Based on ![Wileyfox Swift 2 device tree](https://github.com/DevelopedInside/android_device_wileyfox_marmite "Wileyfox Swift 2 source tree")
 
 Nokia 5 TA-1053 (codenamed "d1c") is a smartphone from HMD Global.
 It was released in August 2017.
