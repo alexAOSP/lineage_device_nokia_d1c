@@ -18,9 +18,3 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     init.qcom.bt.sh \
     init.qcom.fm.sh
-
-# Wileyfox varinats
-PRODUCT_PACKAGES += \
-    init.variant.mv1.rc \
-    init.variant.mv2.rc \
-    init.variant.mv3.rc

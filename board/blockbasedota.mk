@@ -1,0 +1,1 @@
+BLOCK_BASED_OTA := false
