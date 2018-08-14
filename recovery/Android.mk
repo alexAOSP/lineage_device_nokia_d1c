@@ -8,6 +8,6 @@ endif
 
 LOCAL_C_INCLUDES := $(call project-path-for,recovery)
 LOCAL_SRC_FILES := recovery_updater.cpp
-LOCAL_MODULE := librecovery_updater_marmite
+LOCAL_MODULE := librecovery_updater_d1c
 LOCAL_MODULE_TAGS := eng
 include $(BUILD_STATIC_LIBRARY)

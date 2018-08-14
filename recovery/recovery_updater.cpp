@@ -198,6 +198,6 @@ Value * VerifyBasebandFn(const char *name, State *state, int argc, Expr *argv[])
     return StringValue(strdup(ret ? "1" : "0"));
 }
 
-void Register_librecovery_updater_marmite() {
+void Register_librecovery_updater_d1c() {
     RegisterFunction("marmite.verify_baseband", VerifyBasebandFn);
 }
