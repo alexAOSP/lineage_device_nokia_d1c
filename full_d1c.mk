@@ -22,8 +22,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/nokia/d1c/device.mk)
 
 # Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := d1c
-PRODUCT_NAME := full_d1c
+PRODUCT_DEVICE := D1C
+PRODUCT_NAME := full_TA-1003_00WW
 PRODUCT_BRAND := Nokia
-PRODUCT_MODEL := D1C
-PRODUCT_MANUFACTURER := Nokia
+PRODUCT_MODEL := TA-1003
+PRODUCT_MANUFACTURER := FIH
